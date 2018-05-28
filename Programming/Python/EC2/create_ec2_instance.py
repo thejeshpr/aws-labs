@@ -21,6 +21,7 @@ def process_args():
 
 
 def create_ec2_instance(image_id, key_name, tags, security_grp_ids):
+	""" Creates EC2 instance using aws sdk boto3"""
 	ec2 = boto3.resource('ec2')
 	InstanceType = 't2.micro'
 
